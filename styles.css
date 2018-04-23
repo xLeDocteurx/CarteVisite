@@ -1,0 +1,250 @@
+colors {
+    
+    background-color : #cfe5ba; /* Highlights and extras */
+    
+    background-color : #384852; /* Font content */
+    
+    background-color : #204f61; /* fond header */
+    background-color : #417d97; /* fond content */
+    background-color : #85b9c4; /* elements inside header  */ /* titles H header */
+    
+    background-color : #c4dbdf; /* elements inside content */ /* font header */
+    background-color : #ffffff; /* element inside other elements inside content */ /* font header */
+    }
+
+body {
+
+    text-shadow: #f4e5dd;
+
+/*    display: flex;
+    justify-content: center;
+    align-items: center;
+*/
+background-color : #cfe5ba; /* Highlights and extras */
+
+        font-family: 'Open Sans';
+
+        line-height: 20px;
+}
+
+#print {
+
+    text-align: center;
+
+    margin-top: 50px;
+}
+
+#pop-up {
+
+    display: none;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+
+    background-color: rgba(112, 112, 112, 0.6);
+}
+
+#pop-up img {
+
+    margin-top: 10%;
+}
+
+#printable-img {
+
+}
+
+#carte {
+
+    width: 500px;
+    height: 320px;
+
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background: 
+        linear-gradient(217deg, #85b9c4, rgb(0,0,0,0) 50%),
+        linear-gradient(127deg, #417d97, rgb(0,0,0,0) 70%),
+        linear-gradient(336deg, #204f61, rgb(0,0,0,0) 70%); 
+
+    border: 5px solid #384852;
+    border-radius: 20px;
+
+    /*z-index: -1;*/
+}
+
+#trame {
+
+    position: absolute;
+    z-index: -1;
+
+    width: 500px;
+    height: 320px;;
+
+    background-image: url(trame.png);
+
+    opacity: 0.15;
+    border-radius: 15px;
+}
+
+.centrage {
+
+    margin-top: 35px;
+
+    text-align: center;
+}
+
+.imgbackground {
+
+    position: absolute;
+
+    width: 500px;
+    height: 320px;
+
+    background-image: url(code.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-x: 75%;
+    background-position-y: 50%;
+
+    z-index: -1;
+}
+
+.imgleft {
+
+/*    display: block;
+*/    width: 70%;
+
+    margin-top: 44%;
+    margin-left: 15%;
+
+    border: 5px solid #384852;
+    border-radius: 50%;
+}
+
+.imgright {
+
+    width: 50%;
+
+    margin-left: 20%;
+    border-radius: 10px;
+    padding: 5px;
+    
+//    position: relative;
+
+//    animation-name: flashcode;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;   
+}
+
+.leftpanel {
+
+    display: block;
+    float: left;
+    width: 40%;
+    height: 100%;
+
+/*    background: rgb(141, 141, 141);    
+*/
+}
+
+.rightpanel {
+
+    display: block;
+    float: right;
+    width: 59%;
+    height: 100%;
+
+ /*   border-radius: 20px;
+
+ /*   background: #cdaca8;
+ /*   opacity: 20%;
+ /*   fill-opacity: 50%; */
+}
+
+/* 
+// color 1 : #9dcadf
+// color 2 : #427696
+
+// color 3 : #847d88
+
+// color 4 : #cdaca8
+// color 5 : #edcdc3
+// color 6 : #f4e5dd
+
+
+
+// background: radial-gradient(red, blue);
+*/
+
+
+p {
+    /*    display: inline-block;
+    */
+    
+    color: #384852;
+    text-shadow:    1px 0 0 #dddddd, 
+                    0 1px 0 #dddddd, 
+                    0 -1px 0 #dddddd, 
+                    -1px 0 0 #dddddd;
+    }
+
+i {
+    color: #ffffff;
+
+    text-shadow:    1px 0 0 #384852, 
+                    0 1px 0 #384852, 
+                    0 -1px 0 #384852, 
+                    -1px 0 0 #384852;
+    
+}
+
+h2 {
+    color: #cfe5ba;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    text-shadow:    1px 0 0 #384852, 
+                    0 1px 0 #384852, 
+                    0 -1px 0 #384852, 
+                    -1px 0 0 #384852;
+}
+
+h3 {
+    color: #cfe5ba;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    text-shadow:    1px 0 0 #384852, 
+                    0 1px 0 #384852, 
+                    0 -1px 0 #384852, 
+                    -1px 0 0 #384852;
+}
+
+.line_break {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 5px solid #384852;
+    clear: both;
+    height: 1px;
+    text-decoration: none;
+    line-height: 1px;
+}
+
+@keyframes flashcode {
+    0%   {background-color:#f4e5dd; width: ;}
+    25%  {background-color:#edcdc3; }
+    50%  {background-color:#cdaca8; }
+    75%  {background-color:#edcdc3; }
+    100% {background-color:#f4e5dd; }
+}
